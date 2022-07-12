@@ -7,7 +7,7 @@ function adicionar(){
 
     var inppaciente = document.getElementById('inpPaciente').value
    
-    if(inppaciente === ' '){
+    if(inppaciente == ""){
         alert('Campo vazio, favor adicionar umcliente')
         return
     }
@@ -17,6 +17,7 @@ function adicionar(){
     outAtender.textContent =`${clientes[0]}`
     outPaciente.textContent=`${clientes.join('\n')}`
     console.log(clientes.toString())
+    inppaciente.value = ""
 
 
 }
@@ -25,7 +26,7 @@ function urgencia(){
 
     var inppaciente = document.getElementById('inpPaciente').value
    
-    if(inppaciente === ' '){
+    if(inppaciente == ""){
         alert('Campo vazio, favor adicionar umcliente')
         return
     }
@@ -41,20 +42,20 @@ function urgencia(){
 
 function atender(){
 
-    var inppaciente = document.getElementById('inpPaciente').value
+    
    
-    if(inppaciente === ' '){
-        alert('Campo vazio, favor adicionar umcliente')
-        return
-    }
-    
-    
 
     outAtender.textContent =`${clientes[0]}`
 
     clientes.shift(clientes[0])
     outPaciente.textContent=`${clientes.join('\n')}`
+
+    
+
+    
     console.log(clientes.toString())
+
+
 
 
 }
