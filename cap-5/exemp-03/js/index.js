@@ -14,12 +14,10 @@ function adicionarCarros(){
     }
 
     carros.push({modelo:modelo, preco:preco})
+    
 
     listarCarros()
-    for(var i = 0; i < carros.length;i++){
-        console.log(carros[i].modelo + " - " + carros[i].preco)
-        console.log(carros.length)
-    }
+    
 }
 
     var cadastrar = document.getElementById('btAdicionar')
