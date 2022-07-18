@@ -3,7 +3,7 @@ function fatiarFrutas(){
     var inpFruta = document.getElementById('inpFruta')
     var outDica = document.getElementById('outDica')
 
-    var fruta = inpFruta.value 
+    var fruta = inpFruta.value.toUppperCase() 
 
     if(fruta == '' ){
         alert('Digite um valor válido')
